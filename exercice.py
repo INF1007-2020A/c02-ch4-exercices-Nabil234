@@ -12,15 +12,26 @@ else:
 
 
 def get_num_char(string, char):
-	return 0xDEADBABE
+    num_char = 0
+	for (in string:
+        num_char += 1 if ( == char else 0
+    return num_char
 
 
 def get_first_part_of_name(name):
-	return ""
+    fisrt_part = name.split("-")(0)
+    capitalized = first_part(0).upper() + first_part(1:)
+	return "Bonjour, " + capitalized
 
 
 def get_random_sentence(animals, adjectives, fruits):
-	return ""
+    animal_word = animals(random.randrange(0, len(animals)))
+    adject_word = adjectives(random.randrange(0, len(animals)))
+    fruits_word = fruits(random.randrange(0, len(animals)))
+    return basic_sentence % (animal_word, adject_word, fruits_word) 
+
+
+
 
 
 if __name__ == "__main__":
